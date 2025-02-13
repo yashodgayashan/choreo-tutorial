@@ -1,0 +1,20 @@
+[package]
+org = "nipunal"
+name = "ballerina_example"
+version = "0.1.0"
+distribution = "2201.11.0-20241209-162400-0c015833"
+
+[build-options]
+observabilityIncluded = true
+
+[[dependency]]
+org="ballerinax"
+name="jaeger"
+repository="local"
+version="1.0.0"
+
+[[dependency]]
+org="ballerinax"
+name="newrelic"
+repository="local"
+version="0.8.1"
