@@ -1,0 +1,10 @@
+steps:
+  - name: Ballerina Build
+    template: choreo/ballerina-build@v1
+  - name: Static Code Analysis
+    template: sonar-qube-3
+templates:
+  - name: sonar-qube-3
+    inlineScript: |
+      #!/bin/bash
+      echo "Starting SonarQube scan...222"
